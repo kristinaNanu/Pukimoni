@@ -11,11 +11,28 @@
 			"item": [
 				{
 					"name": "GetPokemons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Keyword\" : \"saur\"\r\n}"
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/Pokemon/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pokemon",
+								""
+							]
 						}
 					},
 					"response": []
@@ -26,7 +43,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/Pokemon/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pokemon",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -166,10 +193,20 @@
 				{
 					"name": "DeletePokemon",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/Pokemon/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pokemon",
+								"10"
+							]
 						}
 					},
 					"response": []
@@ -210,10 +247,29 @@
 				{
 					"name": "CatchPokemon",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PokemonId\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/PokemonTrainer/CatchPokemon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"PokemonTrainer",
+								"CatchPokemon"
+							]
 						}
 					},
 					"response": []
@@ -285,10 +341,21 @@
 				{
 					"name": "FavoritePokemonToggle",
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/PokemonTrainer/FavoritePokemon/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"PokemonTrainer",
+								"FavoritePokemon",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -316,11 +383,32 @@
 				},
 				{
 					"name": "GetUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User"
+							]
 						}
 					},
 					"response": []
@@ -331,7 +419,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/User/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -342,7 +440,17 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/User/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -352,8 +460,22 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Password\" : \"newASP23\"\r\n}"
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/User/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -384,11 +506,32 @@
 				},
 				{
 					"name": "GetRegions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/Region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Region"
+							]
 						}
 					},
 					"response": []
@@ -432,7 +575,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/ElementType\"Keyword\" : \"Uno\"",
+							"raw": "http://localhost:5000/api/ElementType",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -440,7 +583,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"ElementType\"Keyword\" : \"Uno\""
+								"ElementType"
 							]
 						}
 					},
@@ -551,10 +694,21 @@
 				{
 					"name": "BanUserToggle",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:5000/api/User/BanUserToggle/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"BanUserToggle",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -598,7 +752,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Email\" : \"kristina.nanuseski.3.18@ict.edu.rs\",\r\n    \"Password\" : \"kmeKaca56\"\r\n}",
+					"raw": "{\r\n    \"Email\" : \"kristina.nanuseski@gmail.com\",\r\n    \"Password\" : \"kmeKaca56\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
