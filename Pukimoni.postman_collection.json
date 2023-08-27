@@ -1,0 +1,673 @@
+{
+	"info": {
+		"_postman_id": "2aa88a53-da3b-42ac-b39f-48fb71480cec",
+		"name": "Pukimoni",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27253566"
+	},
+	"item": [
+		{
+			"name": "Requests",
+			"item": [
+				{
+					"name": "GetPokemons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePokemon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "Number",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Test desc",
+									"type": "text"
+								},
+								{
+									"key": "RegionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "EvolutionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Image",
+									"type": "file",
+									"src": "/D:/FAKS/Sajtovi/PWD/assets/images/logo1.png"
+								},
+								{
+									"key": "PokemonTypes[0][ElementTypeId]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PokemonTypes[1][ElementTypeId]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Pokemon/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pokemon",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePokemon",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "Number",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Test desc",
+									"type": "text"
+								},
+								{
+									"key": "RegionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "EvolutionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Image",
+									"type": "file",
+									"src": "/D:/FAKS/Sajtovi/PWD/assets/images/logo1.png"
+								},
+								{
+									"key": "PokemonTypes[0][ElementTypeId]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PokemonTypes[1][ElementTypeId]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Pokemon/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pokemon",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPokemonTrainer - Get List of Trainers Pokemon",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/PokemonTrainer/TrainerPokemon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"PokemonTrainer",
+								"TrainerPokemon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CatchPokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TransferPokemon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/PokemonTrainer/TransferPokemon/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"PokemonTrainer",
+								"TransferPokemon",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPokedex",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ActionName\":\"Get\",\r\n    \"DateFrom\":\"2023-08-26T21:56:12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/User/Pokedex",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"Pokedex"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FavoritePokemonToggle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/User/Logs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User",
+								"Logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\" : \"Test1234\",\r\n    \"Email\" : \"email@gmail.com\",\r\n    \"Password\" : \"kmeKaca56\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRegions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRegion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Region/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Region",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTypes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Keyword\" : \"Uno\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/ElementType\"Keyword\" : \"Uno\"",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"ElementType\"Keyword\" : \"Uno\""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/ElementType/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"ElementType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateRegionElType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\" : \"AAAAAAAAAAAAAA\",\r\n    \"Description\" : \"AAAAAAAAAAAAAAAAAAAAAA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Region/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Region",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRegionElType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Region/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Region",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRegionElType",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\" : \"Voda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/ElementType/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"ElementType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BanUserToggle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyYjljNDVmOS0wN2FjLTRmMmUtYWY5MS0yOGViNzY2ODM5NGUiLCJpc3MiOiJQdWtpbW9uaSIsImlhdCI6MTY5MzA4NjIxMiwiVXNlcklkIjoiMSIsIlBlcm1pc3Npb25zIjoiWzE4LDE5LDIwLDIxLDI1LDIyLDIzLDI0LDE3LDcsMyw0LDUsNiwxNiwyLDksMTAsMTEsMTIsMTMsMTQsMTUsOCwxLDI2XSIsIkVtYWlsIjoia3Jpc3RpbmEubmFudXNlc2tpLjMuMThAaWN0LmVkdS5ycyIsIm5iZiI6MTY5MzA4NjIxMiwiZXhwIjoxNjkzMTAwNjEyLCJhdWQiOiJBbnkifQ.3gvLlW57Atr3K5YqwT3OBicCz6Ro1Rdb_u2MHN16gvk",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\" : \"kristina.nanuseski.3.18@ict.edu.rs\",\r\n    \"Password\" : \"kmeKaca56\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Authentification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Authentification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Starter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Starter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Starter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\" : \"Test1234\",\r\n    \"Email\" : \"email@gmail.com\",\r\n    \"Password\" : \"kmeKaca56\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
