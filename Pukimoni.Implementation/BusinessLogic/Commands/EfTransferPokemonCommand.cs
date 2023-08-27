@@ -31,7 +31,7 @@ namespace Pukimoni.Implementation.BusinessLogic.Queries
 
         public void Execute(int request)
         {
-            var pokemonToTransfer = context.PokemonTrainers.Where(x=> x.TrainerId == this.user.Id && x.Id == request).FirstOrDefault();
+            var pokemonToTransfer = context.PokemonTrainers.Where(x=> x.TrainerId == this.user.Id && x.Id == request && x.Favorite != true).FirstOrDefault();
 
             if (pokemonToTransfer == null)
             {
