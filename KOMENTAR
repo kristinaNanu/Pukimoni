@@ -1,2 +1,4 @@
 Inherit nekada ne radi i ne registruje roditeljski token.
 Ako autorizacija ne radi zbog toga samo treba da se pojedinacno doda token za svaki request :(
+
+Radjen je code first pristup, ali je prosledjena i baza.
