@@ -9,7 +9,7 @@ namespace Pukimoni.Application.BusinessLogic.DTO
     public class PokemonDto : BaseDto
     {
         public string Name { get; set; }
-        public string Desription { get; set; }
+        public string Description { get; set; }
         public int Number { get; set; }
         //slika
         public string RegionName { get; set; }
