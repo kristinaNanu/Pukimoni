@@ -33,7 +33,7 @@ namespace Pukimoni.Implementation.BusinessLogic.Queries
 
         public PaginationResult<PokemonDto> Execute(PaginationSearch search)
         {
-            var query = context.Pokemons.Include(x=> x.Region).Include(x=> x.PokemonElementTypes).ThenInclude(x=>x.ElementType).Where(x => x.EntityStatus == Domain.Enums.eEntityStatus.Active);
+             var query = context.Pokemons.Include(x=> x.Evolution).Include(x=> x.Region).Include(x=> x.PokemonElementTypes).ThenInclude(x=>x.ElementType).Where(x => x.EntityStatus == Domain.Enums.eEntityStatus.Active);
 
 
             if (!string.IsNullOrEmpty(search.Keyword))
