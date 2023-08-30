@@ -24,7 +24,7 @@ namespace Pukimoni.DataAccess.Configurations
             builder.HasIndex(x => x.Name).IsUnique();
             builder.HasIndex(x => x.Number).IsUnique();
 
-            builder.HasOne(x => x.Evolution).WithOne().HasForeignKey<Pokemon>(x => x.Id).OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(x => x.Evolution).WithMany().HasForeignKey(x => x.EvolutionId).OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(x => x.Image).WithOne(x=> x.Pokemon).HasForeignKey<Pokemon>(x => x.ImageId).OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(x => x.Region).WithMany(x => x.Pokemons).HasForeignKey(x => x.RegionId).OnDelete(DeleteBehavior.Restrict);
             builder.HasMany(x=> x.PokemonElementTypes).WithOne(x=> x.Pokemon).HasForeignKey(x=> x.PokemonId).OnDelete(DeleteBehavior.Restrict);
