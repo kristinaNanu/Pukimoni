@@ -16,7 +16,7 @@ namespace Pukimoni.Implementation.Profiles
             CreateMap<PokemonDto, Pokemon>().ReverseMap();
             CreateMap<Pokemon, PokemonDto>().ForMember(x => x.RegionName, opt => opt.MapFrom(y => y.Region.Name));
             CreateMap<Pokemon, PokemonDto>().ForMember(x => x.EvolutionName, opt => opt.MapFrom(y => y.Evolution.Name));
-            CreateMap<Pokemon, PokemonDto>().ForMember(x => x.EvolutionId, opt => opt.MapFrom(y => y.Evolution.Id));
+            //CreateMap<Pokemon, PokemonDto>().ForMember(x => x.EvolutionId, opt => opt.MapFrom(y => y.Evolution.Id));
         }
     }
 }
